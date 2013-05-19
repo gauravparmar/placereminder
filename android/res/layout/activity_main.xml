@@ -1,0 +1,92 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:orientation="vertical"
+    android:layout_width="480dp"
+    android:layout_height="800dp" >
+
+        <com.baidu.mapapi.map.MapView android:id="@+id/bmapsView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+
+        <Button
+            android:id="@+id/searchbutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_x="249dp"
+            android:layout_y="4dp"
+           
+            android:text="搜索" />
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_x="18dp"
+            android:layout_y="16dp"
+            android:ems="10"
+            android:singleLine="true" />
+
+        <SlidingDrawer
+            android:id="@+id/slidingDrawer1"
+            android:layout_width="239dp"
+            android:layout_height="380dp"
+            android:layout_x="108dp"
+            android:layout_y="64dp"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="||" 
+               />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                
+                 android:orientation="vertical"
+                 android:gravity="center_vertical"
+                 android:padding="5dp"
+                 
+                 >
+                 <Button
+                android:id="@+id/view_task"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:background="#EE7621"
+                android:text="查看所有提醒" 
+                />
+   
+               <Button
+                android:id="@+id/setting"
+                android:layout_width="fill_parent"
+                 android:background="#EE7621"
+                android:layout_height="wrap_content"
+                android:text="设置" 
+               />
+                <Button
+                android:id="@+id/speaking"
+                android:layout_width="fill_parent"
+                 android:background="#EE7621"
+                android:layout_height="wrap_content"
+                android:text="语音设置任务" 
+               />
+            </LinearLayout>
+        </SlidingDrawer>
+
+        <TextView
+            android:id="@+id/textGeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="48dp"
+            android:layout_y="88dp"
+            android:text="TextView" 
+            android:visibility="invisible"/>
+
+</AbsoluteLayout>

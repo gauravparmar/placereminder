@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="256dp"
+        android:layout_height="108dp"
+        android:layout_x="30dp"
+        android:layout_y="36dp"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonOKinAddTags"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_x="42dp"
+        android:layout_y="160dp"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/buttonCaninaddTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="168dp"
+        android:layout_y="160dp"
+        android:text="Cancle" />
+
+</AbsoluteLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/OKBt"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_x="52dp"
+        android:layout_y="272dp"
+        android:text="确定" />
+
+    <EditText
+        android:id="@+id/editTextaddEvent"
+        android:layout_width="259dp"
+        android:layout_height="160dp"
+        android:layout_x="30dp"
+        android:layout_y="108dp"
+        android:ems="10"
+        android:hint="请输入相关提示信息"
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:singleLine="false" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="29dp"
+        android:max="1440" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_x="12dp"
+        android:layout_y="65dp"
+        android:max="1440" />
+
+    <TextView
+        android:id="@+id/textGeo"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_x="237dp"
+        android:layout_y="35dp"
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_x="238dp"
+        android:layout_y="68dp"
+        android:text="00:00" />
+
+    <Button
+        android:id="@+id/CANBT"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_x="158dp"
+        android:layout_y="274dp"
+        android:text="取消" />
+
+</AbsoluteLayout>
